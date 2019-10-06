@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<title>GAME_HOME</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="cssStyleSheet.css">
+
+
+<body>
+
+	<!-- Navbar -->
+	<div class="web-top">
+		<div class="web-nv-bar web-color-black">
+			<a href="STORE.html" class="web-button web-padding-large web-right">STORE</a>
+			<a href="HOME.html" class="web-button web-padding-large web-right">HOME</a>
+		</div>
+	</div>
+
+	<!--Images -->
+	<div class="webSlides web-center">
+		<a href="STORE.html"><img src="image/13929.png" style="width:100%"></a>
+	</div>
+	<div class="webSlides web-center">
+		<a href="STORE.html"><img src="image/426.jpg" style="width:100%"></a>
+	</div>
+	<div class="webSlides web-center">
+		<a href="STORE.html"><img src="image/13707.jpg" style="width:100%"></a>
+	</div>
+	<div class="webSlides web-center">
+		<a href="STORE.html"><img src="image/maxresdefault.jpg" style="width:100%"></a>
+	</div>
+	<div class="webSlides web-center">
+		<a href="STORE.html"><img src="image/13578.jpg" style="width:100%"></a>
+	</div>
+	<div class="webSlides web-center">
+		<a href="STORE.html"><img src="image/1011.jpg" style="width:100%"></a>
+	</div>
+
+	<!-- Introduct -->
+	<div class="web-content web-center web-padding-64" style="max-width:700px">
+		<h2 class="web-wide">GAME STORE</h2>
+		<p class="web-opacity"><i>content</i></p>
+	</div>
+	<!-- Footer -->
+	<footer class=" web-padding-64 web-center web-opacity web-color-light-grey">
+		<p class="web-medium">Powered by Rapepat Pengsart</p>
+	</footer>
+
+	<script>
+		var count = 0;
+		carousel();
+
+		function carousel() {
+			var i;
+			var x = document.getElementsByClassName("webSlides");
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";  
+			}
+			count++;
+			if (count > x.length) {count = 1}    
+				x[count-1].style.display = "block";  
+			setTimeout(carousel, 3000);    
+		}
+	</script>
+</body>
+</html>
